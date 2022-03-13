@@ -1,0 +1,5 @@
+<svg width="10" height="110" viewBox="0 0 10 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="4.5" y1="0.5" x2="4.49999" y2="63.5" stroke="currentColor" strokeLinecap="round"/>
+<circle cx="4.5" cy="76.5" r="2" transform="rotate(-180 4.5 76.5)" stroke="currentColor"/>
+<circle cx="4.5" cy="89.5" r="2" transform="rotate(-180 4.5 89.5)" fill="currentColor" stroke="currentColor"/>
+</svg>

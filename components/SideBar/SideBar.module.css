@@ -1,0 +1,6 @@
+.pathHover:hover {
+  stroke: #64ffda;
+}
+.chevIcon {
+  top: calc(50% - 20px);
+}

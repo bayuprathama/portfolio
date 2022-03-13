@@ -1,0 +1,3 @@
+.fontClamp {
+  font-size: clamp(40px, 8vw, 70px);
+}
