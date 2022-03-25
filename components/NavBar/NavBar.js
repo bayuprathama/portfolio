@@ -41,18 +41,15 @@ export default function NavBar() {
           </div>
 
           <ul className="hidden items-center gap-10 text-sm tracking-wide lg:flex">
-            <NavItem name="About Me" link="#about" />
-            <NavItem name="My Work" link="#mywork" />
-            <NavItem name="Tech & Tool" link="#techandtool" />
-            <NavItem name="Contact" link="#contact" />
-            <li>
-              <a
-                href=""
-                className="rounded-md border border-primary-green px-6 py-2 text-sm text-primary-green hover:bg-primary-green-tint hover:transition-all hover:duration-150 hover:ease-in-out"
-              >
-                Resume
-              </a>
-            </li>
+            <NavItem name="About Me" link="#about" variant="standard" />
+            <NavItem name="My Work" link="#mywork" variant="standard" />
+            <NavItem
+              name="Tech & Tool"
+              link="#techandtool"
+              variant="standard"
+            />
+            <NavItem name="Contact" link="#contact" variant="standard" />
+            <NavItem name="Resume" link="#href" variant="cta" />
           </ul>
         </div>
       </nav>

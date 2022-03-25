@@ -9,6 +9,10 @@ export default function SideBar() {
     e.preventDefault();
     setIsOpen((prevIsOpen) => !prevIsOpen);
   };
+  const chevOpenClose = !isOpen ? "" : "-scale-x-100";
+  const chevAnimation = !isOpen
+    ? "hover:translate-x-1"
+    : "hover:-translate-x-1";
   return (
     <>
       <div
@@ -164,7 +168,7 @@ export default function SideBar() {
         </nav>
 
         <div
-          className={`${styles.chevIcon} absolute -right-10 text-primary-text transition-all duration-100 ease-in hover:translate-x-1 hover:text-primary-green`}
+          className={`${styles.chevIcon} ${chevOpenClose} ${chevAnimation} absolute -right-10 text-secondary-text transition-all duration-100 ease-in  hover:text-primary-green`}
         >
           <button onClick={toggleSideBar} className="p-2">
             <svg

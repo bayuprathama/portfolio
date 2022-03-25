@@ -1,9 +1,13 @@
-export default function NavItem({ name, link }) {
+export default function NavItem({ name, link, variant }) {
+  const variants = {
+    standard: "p-1 hover:text-primary-text",
+    cta: "rounded-md border border-primary-green px-6 py-2 tracking-widest text-primary-green hover:bg-primary-green-tint ",
+  };
   return (
     <>
       <li>
         <a
-          className=" block border-b border-b-transparent p-1 transition-all duration-200 ease-in-out hover:border-primary-green  hover:text-primary-text hover:transition-all hover:duration-200 hover:ease-in-out"
+          className={`text-xs  uppercase tracking-widest hover:transition-all hover:duration-150 hover:ease-in-out ${variants[variant]}`}
           href={link}
         >
           {name}
