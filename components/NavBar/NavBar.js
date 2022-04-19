@@ -40,14 +40,10 @@ export default function NavBar() {
             </svg>
           </div>
 
-          <ul className="hidden items-center gap-10 text-sm tracking-wide lg:flex">
+          <ul className="hidden items-center gap-10 tracking-wide lg:flex">
             <NavItem name="About Me" link="#about" variant="standard" />
             <NavItem name="My Work" link="#mywork" variant="standard" />
-            <NavItem
-              name="Tech & Tool"
-              link="#techandtool"
-              variant="standard"
-            />
+            <NavItem name="Blog" link="#blog" variant="standard" />
             <NavItem name="Contact" link="#contact" variant="standard" />
             <NavItem name="Resume" link="#href" variant="cta" />
           </ul>

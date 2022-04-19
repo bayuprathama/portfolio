@@ -1,25 +1,29 @@
 import styles from "./HeroContent.module.css";
 export default function HeroContent() {
   return (
-    <section className=" flex min-h-screen flex-col justify-center font-inter ">
-      <h4 className="mb-3 pl-1 text-primary-green">Halo, my name is</h4>
-      <h2
-        className={`mb-4 text-6xl font-medium text-secondary-text ${styles.fontClamp}`}
-      >
-        Bayu Prathama.
-      </h2>
-      <h1
-        className={`${styles.fontClamp} mb-6 text-7xl font-semibold leading-tight text-primary-text md:max-w-3xl lg:max-w-none`}
-      >
-        I build things for the web 🚀
-      </h1>
-      <h3 className="mb-12 max-w-md text-lg font-medium text-secondary-text">
-        I&apos;m a front end web engineer based on Bali, currently focusing on
-        building network and helping small business create their{" "}
-        <span className="text-primary-green">awesome website!</span>
-      </h3>
+    <section className="mt-44 min-h-screen font-inter md:mt-auto md:flex md:flex-col md:justify-center ">
+      <div className="space-y-7">
+        <h4 className="pl-1 font-roboto-mono leading-relaxed text-primary-green">
+          Halo, my name is
+        </h4>
+        <h2
+          className={`text-6xl font-bold text-secondary-text ${styles.fontClamp}`}
+        >
+          Bayu Prathama🦉
+        </h2>
+        <h1
+          className={`${styles.fontClamp} text-7xl font-bold leading-tight text-primary-text md:max-w-3xl lg:max-w-none`}
+        >
+          I build things for the web 🚀
+        </h1>
+        <h3 className="max-w-lg text-lg leading-normal text-secondary-text">
+          I&apos;m a front end web engineer based on Bali, currently focusing on
+          building network and helping small business create their{" "}
+          <span className="text-primary-green">awesome website!</span>
+        </h3>
+      </div>
 
-      <div>
+      <div className="mt-16">
         <a
           className={`inline-block cursor-pointer rounded-md border border-accent-pink-darker py-4 px-8 font-roboto-mono text-sm font-medium uppercase tracking-widest text-primary-text duration-200 hover:border-accent-pink hover:bg-accent-pink-tint hover:transition-all`}
         >
