@@ -24,15 +24,9 @@ export default function Layout({ title, children }) {
       <main className="min-h-screen px-8 md:px-20 lg:px-28 xl:px-52">
         <div className="mx-auto max-w-6xl text-secondary-text">
           <HeroContent />
-          <p className="w-24">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit quaerat necessitatibus non ipsam tenetur a ullam
-            mollitia cupiditate eius eligendi nobis odit, molestias, modi ad
-            ipsum! Nihil corporis consequatur fugiat harum, ducimus, atque
-            debitis voluptate quia minus perspiciatis eligendi veritatis! Cum
-            quis recusandae eius accusantium voluptatibus autem similique
-            doloribus molestias.
-          </p>
+          <h1 className="mb-8 bg-primary-green p-4 text-center text-xl font-bold text-primary-bg">
+            !!!SITE IS UNDER CONSTRUCTION!!!
+          </h1>
         </div>
       </main>
     </>

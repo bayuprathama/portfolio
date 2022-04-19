@@ -1,7 +1,7 @@
 import styles from "./HeroContent.module.css";
 export default function HeroContent() {
   return (
-    <section className="mt-16 min-h-screen font-inter md:mt-24">
+    <section className="min-h-screen pt-16 font-inter md:pt-24">
       <div className="space-y-5">
         <h4 className="pl-1 font-roboto-mono leading-relaxed text-primary-green">
           Halo, my name is
