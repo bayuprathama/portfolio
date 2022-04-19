@@ -24,8 +24,8 @@ export default function Layout({ title, children }) {
       <main className="min-h-screen px-8 md:px-20 lg:px-28 xl:px-52">
         <div className="mx-auto max-w-6xl text-secondary-text">
           <HeroContent />
-          <h1 className="mb-8 bg-primary-green p-4 text-center text-xl font-bold text-primary-bg">
-            !!!SITE IS UNDER CONSTRUCTION!!!
+          <h1 className="mb-8 bg-primary-green p-4 text-center text-2xl font-bold text-primary-bg">
+            ⚠️ SITE IS UNDER CONSTRUCTION!!! ⚠️
           </h1>
         </div>
       </main>
