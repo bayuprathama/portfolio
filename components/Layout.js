@@ -21,7 +21,7 @@ export default function Layout({ title, children }) {
       <NavBar />
       <SideBar />
 
-      <main className="min-h-screen px-6 md:px-20 lg:px-28 xl:px-40">
+      <main className="min-h-screen px-8 md:px-20 lg:px-28 xl:px-52">
         <div className="mx-auto max-w-6xl text-secondary-text">
           <HeroContent />
           <p className="w-24">

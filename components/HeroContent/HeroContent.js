@@ -1,8 +1,8 @@
 import styles from "./HeroContent.module.css";
 export default function HeroContent() {
   return (
-    <section className="mt-44 min-h-screen font-inter md:mt-auto md:flex md:flex-col md:justify-center ">
-      <div className="space-y-7">
+    <section className="mt-16 min-h-screen font-inter md:mt-24">
+      <div className="space-y-5">
         <h4 className="pl-1 font-roboto-mono leading-relaxed text-primary-green">
           Halo, my name is
         </h4>
@@ -23,12 +23,12 @@ export default function HeroContent() {
         </h3>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-12">
         <a
           className={`inline-block cursor-pointer rounded-md border border-accent-pink-darker py-4 px-8 font-roboto-mono text-sm font-medium uppercase tracking-widest text-primary-text duration-200 hover:border-accent-pink hover:bg-accent-pink-tint hover:transition-all`}
         >
           <div className="flex items-center gap-5">
-            Check my work{" "}
+            My work{" "}
             <div className="inline-block">
               <svg
                 width="20"

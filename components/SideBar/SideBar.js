@@ -49,7 +49,7 @@ export default function SideBar() {
   return (
     <>
       <div
-        className={`icons fixed hidden h-screen transition-all duration-200 ease-in-out ${sideBarLeftValue} left-0 w-16 flex-col items-center justify-center text-secondary-text xl:flex`}
+        className={`icons fixed hidden h-screen transition-all duration-200 ease-in-out ${sideBarLeftValue} -top-0 left-0 w-16 flex-col items-center justify-center text-secondary-text xl:flex`}
       >
         <nav className="flex flex-col gap-8">
           {socialMedia.map((el, idx) => (

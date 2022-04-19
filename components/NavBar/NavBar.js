@@ -4,9 +4,9 @@ export default function NavBar() {
   return (
     <>
       <nav
-        className={`fixed  top-0 left-0 right-0 bg-primary-bg-tint py-7 px-14 font-roboto-mono text-secondary-text backdrop-blur md:px-20 lg:px-28 xl:px-40`}
+        className={`mx-auto max-w-[96rem] py-9 px-8 font-roboto-mono text-secondary-text md:px-20 `}
       >
-        <div className="mx-auto flex h-full max-w-6xl items-center justify-between">
+        <div className="mx-auto flex h-full items-center justify-between">
           <div className="flex cursor-pointer items-center gap-2 text-primary-green transition-all duration-150 ease-in hover:transition-all hover:duration-200 hover:ease-in-out">
             <svg
               className="hover:fill-primary-green-tint"
@@ -41,9 +41,9 @@ export default function NavBar() {
           </div>
 
           <ul className="hidden items-center gap-10 tracking-wide lg:flex">
+            <NavItem name="Blog" link="#blog" variant="standard" />
             <NavItem name="About Me" link="#about" variant="standard" />
             <NavItem name="My Work" link="#mywork" variant="standard" />
-            <NavItem name="Blog" link="#blog" variant="standard" />
             <NavItem name="Contact" link="#contact" variant="standard" />
             <NavItem name="Resume" link="#href" variant="cta" />
           </ul>

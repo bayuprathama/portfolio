@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .max-w-8xl {
+    max-width: 96rem;
+  }
+}
+
 html {
   scrollbar-width: thin;
   scrollbar-color: #495670 #0a192f;
