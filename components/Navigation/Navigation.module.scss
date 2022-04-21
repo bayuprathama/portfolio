@@ -1,0 +1,46 @@
+.NavBar {
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.navList {
+  display: flex;
+  gap: 2.5rem;
+}
+.menuButton {
+  display: none;
+}
+@media (max-width: 766px) {
+  .navList {
+    overflow: hidden;
+    z-index: 30;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #112240;
+    width: min(75vw, 400px);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all ease-out 100ms;
+  }
+
+  .menuButton {
+    display: inline-block;
+    background-image: url("/img/icons/menu-ham.svg");
+    background-repeat: no-repeat;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    z-index: 999;
+  }
+  .menuButton[aria-expanded="true"] {
+    background-image: url("/img/icons/menu-close.svg");
+  }
+}
+
+.menuExpanded[data-type="mobile__nav"] {
+  // transform: translateX(0);
+  display: flex;
+}

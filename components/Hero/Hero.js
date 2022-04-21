@@ -1,24 +1,24 @@
-import styles from "./HeroContent.module.css";
-export default function HeroContent() {
+import styles from "./Hero.module.scss";
+export default function Hero() {
   return (
-    <section className="min-h-screen pt-16 font-inter md:pt-24">
-      <div className="space-y-5">
-        <h4 className="pl-1 font-roboto-mono leading-relaxed text-primary-green">
-          Halo, my name is
-        </h4>
+    <section className={`${styles.container} mb-32 pt-12 font-inter md:pt-24`}>
+      <div className="space-y-6">
+        <span className="px-1 font-inter text-sm uppercase tracking-[0.3em] text-primary-green">
+          Hi, my name is
+        </span>
         <h2
-          className={`text-6xl font-bold text-secondary-text ${styles.fontClamp}`}
+          className={`text-6xl font-bold text-primary-text ${styles.fontClamp}`}
         >
           Bayu Prathama🦉
         </h2>
         <h1
-          className={`${styles.fontClamp} text-7xl font-bold leading-tight text-primary-text md:max-w-3xl lg:max-w-none`}
+          className={`${styles.fontClamp} text-7xl font-bold text-primary-text md:max-w-3xl lg:max-w-none`}
         >
           I build things for the web 🚀
         </h1>
-        <h3 className="max-w-lg text-lg leading-normal text-secondary-text">
-          I&apos;m a front end web engineer based on Bali, currently focusing on
-          building network and helping small business create their{" "}
+        <h3 className="max-w-lg text-lg font-light leading-relaxed text-secondary-text">
+          I&apos;m a front end web developer based on Bali, currently focusing
+          on building network and helping small business create their{" "}
           <span className="text-primary-green">awesome website!</span>
         </h3>
       </div>

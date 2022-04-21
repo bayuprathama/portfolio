@@ -1,12 +1,23 @@
+import { useState } from "react";
 import NavItem from "./NavItem";
+import styles from "./Navigation.module.scss";
 
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleMenuClick = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
+    !isOpen
+      ? document.body.classList.add("overflow-hidden")
+      : document.body.classList.remove("overflow-hidden");
+  };
+  const mobileMenuVisibility = isOpen ? "translate-x-0" : "translate-x-full";
+
   return (
     <>
-      <nav
-        className={`mx-auto max-w-[96rem] py-9 px-8 font-roboto-mono text-secondary-text md:px-20 `}
+      <header
+        className={`mx-auto py-9 px-8 font-inter text-secondary-text md:px-20 lg:px-28 xl:px-10 `}
       >
-        <div className="mx-auto flex h-full items-center justify-between">
+        <div className="trans mx-auto flex h-full max-w-[90rem] items-center justify-between">
           <div className="flex cursor-pointer items-center gap-2 text-primary-green transition-all duration-150 ease-in hover:transition-all hover:duration-200 hover:ease-in-out">
             <svg
               className="hover:fill-primary-green-tint"
@@ -40,15 +51,28 @@ export default function NavBar() {
             </svg>
           </div>
 
-          <ul className="hidden items-center gap-10 tracking-wide lg:flex">
-            <NavItem name="Blog" link="#blog" variant="standard" />
-            <NavItem name="About Me" link="#about" variant="standard" />
-            <NavItem name="My Work" link="#mywork" variant="standard" />
-            <NavItem name="Contact" link="#contact" variant="standard" />
-            <NavItem name="Resume" link="#href" variant="cta" />
-          </ul>
+          <nav>
+            <ul
+              data-type="mobile__nav"
+              className={`${styles.navList} ${mobileMenuVisibility} md:translate-x-0`}
+            >
+              <NavItem name="Blog" link="#blog" variant="standard" />
+              <NavItem name="About Me" link="#about" variant="standard" />
+              <NavItem name="My Work" link="#mywork" variant="standard" />
+              <NavItem name="Contact" link="#contact" variant="standard" />
+              <NavItem name="Resume" link="#href" variant="cta" />
+            </ul>
+          </nav>
+          <button
+            aria-expanded={Boolean(isOpen)}
+            onClick={handleMenuClick}
+            className={`${styles.menuButton} absolute top-10 right-8 z-30 md:right-20 md:hidden`}
+          ></button>
+          {/* <div
+            className={`${mobileMenuVisibility} fixed top-0 left-0 z-20 hidden h-full w-full overflow-hidden backdrop-blur-sm`}
+          ></div> */}
         </div>
-      </nav>
+      </header>
     </>
   );
 }

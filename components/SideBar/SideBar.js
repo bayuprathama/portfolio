@@ -33,23 +33,23 @@ export default function SideBar() {
     },
   ];
 
-  const [isOpen, setIsOpen] = useState(false);
-  const sideBarLeftValue = isOpen ? "translate-x-0" : "-translate-x-full";
-  const toggleSideBar = (e) => {
-    e.preventDefault();
-    setIsOpen((prevIsOpen) => !prevIsOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+  // const sideBarLeftValue = isOpen ? "translate-x-0" : "-translate-x-full";
+  // const toggleSideBar = (e) => {
+  //   e.preventDefault();
+  //   setIsOpen((prevIsOpen) => !prevIsOpen);
+  // };
 
   // conditional css props value for chevIcon
-  const chevIconOrientation = !isOpen ? "" : "-scale-x-100";
-  const chevAnimation = !isOpen
-    ? "hover:translate-x-1"
-    : "hover:-translate-x-1";
+  // const chevIconOrientation = !isOpen ? "" : "-scale-x-100";
+  // const chevAnimation = !isOpen
+  //   ? "hover:translate-x-1"
+  //   : "hover:-translate-x-1";
 
   return (
     <>
       <div
-        className={`icons fixed hidden h-screen transition-all duration-200 ease-in-out ${sideBarLeftValue} -top-0 left-0 w-16 flex-col items-center justify-center text-secondary-text xl:flex`}
+        className={`icons fixed -top-0 left-6 hidden h-screen w-16 flex-col items-center justify-center text-secondary-text xl:flex`}
       >
         <nav className="flex flex-col gap-8">
           {socialMedia.map((el, idx) => (
@@ -58,14 +58,14 @@ export default function SideBar() {
             </SideBarItem>
           ))}
         </nav>
-
+        {/* 
         <div
           className={`${styles.chevIcon} ${chevIconOrientation} ${chevAnimation} absolute -right-10 text-secondary-text transition-all duration-100 ease-in  hover:text-primary-green`}
         >
           <button onClick={toggleSideBar} className="p-2">
             <Icon name="ChevronIcon" />
           </button>
-        </div>
+        </div> */}
       </div>
     </>
   );

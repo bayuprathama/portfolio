@@ -4,6 +4,7 @@ const nextConfig = {
 };
 
 module.exports = {
-  assetPrefix: ".",
+  // only for next export to deploy in gh pages
+  // assetPrefix: ".",
   nextConfig,
 };

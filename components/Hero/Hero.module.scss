@@ -1,3 +1,7 @@
 .fontClamp {
   font-size: clamp(30px, 8vw, 70px);
 }
+
+.container {
+  height: min(100vh, 900px);
+}

@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-primary-bg">
+      <body className="overflow-x-hidden bg-primary-bg">
         <Main />
         <NextScript />
       </body>
